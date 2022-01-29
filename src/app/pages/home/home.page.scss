@@ -1,0 +1,27 @@
+ion-list {
+    .money {
+        font-weight: bold;
+    }
+    .rise {
+        color: red;
+    }
+    .decline {
+        color: green;
+    }
+}
+
+ion-card {
+    .rise {
+        color: red;
+        font-weight: bold;
+    }
+    .decline {
+        color: green;
+        font-weight: bold;
+    }
+
+    ion-card-subtitle {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}

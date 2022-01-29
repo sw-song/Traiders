@@ -1,56 +1,41 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Register</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>  
+    <ion-title class="menu-title">회원가입</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title color="primary">Contact</ion-card-title>
+      <ion-card-title class="card-title" color="primary">회원 정보</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-label position="floating">Name</ion-label>
+        <ion-label position="floating">닉네임 (표시되는 이름)</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Email</ion-label>
+        <ion-label position="floating">이메일 주소 (로그인 아이디)</ion-label>
         <ion-input type="email"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Password</ion-label>
+        <ion-label position="floating">비밀번호</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Password(confirm)</ion-label>
+        <ion-label position="floating">비밀번호 확인</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Phone number</ion-label>
+        <ion-label position="floating">휴대폰 번호 (비밀번호 분실시 확인)</ion-label>
         <ion-input type="tel"></ion-input>
       </ion-item>
     </ion-card-content>>
 
   </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title color="primary">Position</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-radio-group>
-        <ion-item>
-          <ion-label>Buy</ion-label>
-          <ion-radio value="buy"></ion-radio>
-        </ion-item>
-        <ion-item>
-          <ion-label>Sell</ion-label>
-          <ion-radio value="sell"></ion-radio>
-        </ion-item>
-      </ion-radio-group>
-    </ion-card-content>
-  </ion-card>
-  <ion-button size="block" fill="outline">Register</ion-button>
+  <ion-button size="block" fill="outline">가입하기</ion-button>
 
 </ion-content>

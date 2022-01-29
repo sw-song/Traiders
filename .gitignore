@@ -2,6 +2,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/ionic3,angular,macos,node,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=ionic3,angular,macos,node,git
 
+src/assets/avatar/
+
 ### Angular ###
 ## Angular ##
 # compiled output
