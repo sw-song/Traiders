@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'register-clear',
+    loadChildren: () => import('./pages/register-clear/register-clear.module').then( m => m.RegisterClearPageModule)
   }
 ];
 

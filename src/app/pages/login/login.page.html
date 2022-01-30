@@ -14,8 +14,8 @@
           <ion-label position="floating">비밀번호</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
-        <ion-button color="primary" fill="outline" size="full" shape="round">로그인</ion-button>
-        <ion-button color="primary" fill="outline" size="full" shape="round">회원가임</ion-button>
+        <ion-button color="primary" fill="outline" size="full" shape="round" (click)="login()">로그인</ion-button>
+        <ion-button color="primary" fill="outline" size="full" shape="round" (click)="register()">회원가임</ion-button>
         <ion-button color="medium" fill="clear" size="full">비밀번호를 잊어버렸어요</ion-button>
       </ion-card-content>
     </ion-card>
