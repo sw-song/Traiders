@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'register-clear',
     loadChildren: () => import('./pages/register-clear/register-clear.module').then( m => m.RegisterClearPageModule)
+  },
+  {
+    path: 'screener',
+    loadChildren: () => import('./pages/screener/screener.module').then( m => m.ScreenerPageModule)
+  },
+  {
+    path: 'login-clear',
+    loadChildren: () => import('./pages/login-clear/login-clear.module').then( m => m.LoginClearPageModule)
   }
 ];
 

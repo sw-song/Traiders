@@ -1,0 +1,15 @@
+ion-range::part(pin) {
+    transform: translate3d(0px, -24px, 0px) scale(1);
+  }
+
+ion-content > ion-button {
+    font-weight: bold;
+}
+ion-content > ion-item > ion-label {
+    font-weight: bold;
+}
+
+ion-radio{
+    --color: transparent;
+    --color-checked: #3880ff;
+}

@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>  
-    <ion-title class="bold-title">Traiders</ion-title>
+    <ion-title class="bold-title"></ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -89,7 +89,7 @@
   </ion-card>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="primary">
-      <ion-icon name="add-circle-outline" fill="outline"></ion-icon>
+      <ion-icon name="add-circle-outline" fill="outline" (click)="screener()"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>

@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>구분</ion-label>
+  </ion-item>
+  <ion-button id="exchange-button">거래소</ion-button>
+  <ion-popover trigger="exchange-button" reference="event">
+    <ng-template>
+      <ion-list>
+        <ion-radio-group>
+          <ion-item>
+            <ion-label><b>미국, NASDAQ(나스닥)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label><b>미국, NYSE(뉴욕)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label><b>미국, AMEX(아멕스)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label><b>한국, KOSPI(코스피)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label><b>한국, KOSDAQ(코스닥)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+
+        </ion-radio-group>
+      </ion-list>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button id="sector-button">섹터</ion-button>
+  <ion-popover trigger="sector-button" reference="event">
+    <ng-template>
+      <ion-list>
+        <ion-radio-group >
+          <ion-item>
+            <ion-label><b>미국, NASDAQ(나스닥)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label><b>미국, NYSE(뉴욕)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label><b>미국, AMEX(아멕스)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label><b>한국, KOSPI(코스피)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label><b>한국, KOSDAQ(코스닥)</b></ion-label>
+            <ion-radio slot="end"></ion-radio>
+          </ion-item>
+
+        </ion-radio-group>
+      </ion-list>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button id="size-button">PER</ion-button>
+  <ion-popover trigger="size-button" reference="event">
+    <ng-template>
+      <ion-range class="dual-range" dual-knobs pin color="primary">
+        <ion-icon slot="start" size="small" name="brush"></ion-icon>
+        <ion-icon slot="end" name="brush"></ion-icon>
+      </ion-range>
+    </ng-template>
+  </ion-popover>
+</ion-content>
