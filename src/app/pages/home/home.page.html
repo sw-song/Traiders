@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content>
+
   <ion-list>
     <ion-item>
       <ion-avatar slot="start">
@@ -15,81 +16,22 @@
       </ion-avatar>
       <ion-label>
         <h2>김단발</h2>
-        <p>총 수익률: <span class="rise money">18.2 %</span></p>
-        <p>총 매수금: <span class="money">$ 15,00</span></p>
-        <p>총 평가액: <span class="money">$ 17,74</span></p>
+        <p>보유 스크리너 : <span class="rise money">3</span></p>
       </ion-label>
     </ion-item>
   </ion-list>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>모멤퍼스</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item>
-        <ion-icon class="rise" name="trending-up-outline" slot="start"></ion-icon>
-        <ion-label>
-          <p class="rise">수익률 : 25.2%</p>
-          <p>매수금 : $ 7.00</p>
-          <p>평가액 : $ 8.76</p>
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          <p>생성일 : 30/11/2021</p>
-          <p>분기별 순이익 증가율과 주가 모멘텀을 반영한 전략</p>
-        </ion-label>
-      </ion-item>
-      <ion-button color="primary" fill="clear" size="full">더보기</ion-button>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>높순낮주</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item>
-        <ion-icon class="rise" name="trending-up-outline" slot="start"></ion-icon>
-        <ion-label>
-          <p class="rise">수익률 : 12.1%</p>
-          <p>매수금 : $ 5.00</p>
-          <p>평가액 : $ 6.05</p>
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          <p>생성일 : 11/12/2021</p>
-          <p>연간 순이익 대비 주가가 낮은 종목을 매수하는 전략</p>
-        </ion-label>
-      </ion-item>
-      <ion-button color="primary" fill="clear" size="full">더보기</ion-button>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>지구지키기</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item>
-        <ion-icon class="decline" name="trending-down-outline" slot="start"></ion-icon>
-        <ion-label>
-          <p class="decline">수익률 : -2.1%</p>
-          <p>매수금 : $ 3.00</p>
-          <p>평가액 : $ 2.93</p>
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          <p>생성일 : 6/12/2022</p>
-          <p>매출이 높은 친환경 종목을 적극 매수하는 전략</p>
-        </ion-label>
-      </ion-item>
-      <ion-button color="primary" fill="clear" size="full">더보기</ion-button>
-    </ion-card-content>
-  </ion-card>
+
+  <app-screener-summary></app-screener-summary>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="log-out-outline" fill="outline" (click)='logout()'></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="primary">
-      <ion-icon name="add-circle-outline" fill="outline" (click)="screener()"></ion-icon>
+      <ion-icon name="add-outline" fill="outline" (click)='screener()'></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>

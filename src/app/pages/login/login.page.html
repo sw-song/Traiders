@@ -8,19 +8,16 @@
   
         <ion-card-content>
           <ion-item>
-            <ion-label position="floating">이메일 주소</ion-label>
-            <ion-input type="email" formControlName="email"></ion-input>
+            <ion-label for="email" position="floating">이메일 주소</ion-label>
+            <ion-input type="email"></ion-input>
           </ion-item>
-          <app-error-message [field]="form.get('email')" error="required" message="이메일을 입력해주세요"></app-error-message>
-          <app-error-message [field]="form.get('email')" error="email" message="이메일을 형식을 확인해주세요"></app-error-message>
 
           <ion-item>
             <ion-label position="floating">비밀번호</ion-label>
-            <ion-input type="password" formControlName="password"></ion-input>
+            <ion-input type="password"></ion-input>
           </ion-item>
-          <app-error-message [field]="form.get('password')" error="required" message="비밀번호를 입력해주세요"></app-error-message>
 
-          <ion-button color="primary" fill="outline" size="full" shape="round" (click)="login()" [disabled]="!form.valid">로그인</ion-button>
+          <ion-button color="primary" fill="outline" size="full" shape="round" (click)="login()" >로그인</ion-button>
           <ion-button color="primary" fill="outline" size="full" shape="round" (click)="register()">회원가임</ion-button>
           <ion-button color="medium" fill="clear" size="full">비밀번호를 잊어버렸어요</ion-button>
         </ion-card-content>
